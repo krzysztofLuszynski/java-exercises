@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class MinValueInArrayTest {
-    private final MinValueInArray minValueInArray = new MinValueInArray();
+class MinValueInArrayBasicImplTest {
+    private final MinValueInArray minValueInArray = new MinValueInArrayBasicImpl();
 
     @Test
     void nullArray() {
