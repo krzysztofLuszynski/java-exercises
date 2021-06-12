@@ -6,8 +6,18 @@ class MinValueInArray {
     int minValue(final int[] array) {
         if (ArrayUtils.isEmpty(array)) {
             throw new IllegalArgumentException("Null or empty input array");
+        } else if (array.length == 1) {
+            return array[0];
         } else {
-            return 0;
+            int minValue = array[0];
+
+            for (int element : array) {
+               if (element < minValue) {
+                   minValue = element;
+               }
+            }
+
+            return minValue;
         }
     }
 }
