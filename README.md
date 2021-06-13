@@ -2,3 +2,5 @@
 Repository for java exercises
 
 exercise.minvalue - looking for a min value from int array
+exercise.anagram.grouping - list of strings {"cad", "dds", "dac"} is returned as {{"cad", "dac"}, {"dds"}}
+
