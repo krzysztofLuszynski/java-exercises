@@ -1,4 +1,4 @@
-package exercise.minvalue.anagram.grouping;
+package exercise.anagram.grouping;
 
 import java.util.*;
 

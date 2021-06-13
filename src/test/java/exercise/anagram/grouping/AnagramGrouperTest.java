@@ -1,5 +1,6 @@
-package exercise.minvalue.anagram.grouping;
+package exercise.anagram.grouping;
 
+import exercise.anagram.grouping.AnagramGrouper;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
