@@ -1,6 +1,4 @@
-package exercise.minvalue;
-
-import org.apache.commons.lang3.ArrayUtils;
+package exercise.intarray.minvalue;
 
 import java.util.Arrays;
 import java.util.OptionalInt;

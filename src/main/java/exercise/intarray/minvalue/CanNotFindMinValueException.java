@@ -1,4 +1,4 @@
-package exercise.minvalue;
+package exercise.intarray.minvalue;
 
 class CanNotFindMinValueException extends RuntimeException {
     CanNotFindMinValueException(final String message) {

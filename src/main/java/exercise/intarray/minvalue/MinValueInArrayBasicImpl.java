@@ -1,4 +1,4 @@
-package exercise.minvalue;
+package exercise.intarray.minvalue;
 
 import org.apache.commons.lang3.ArrayUtils;
 
