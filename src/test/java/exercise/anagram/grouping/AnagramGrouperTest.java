@@ -1,6 +1,5 @@
 package exercise.anagram.grouping;
 
-import exercise.anagram.grouping.AnagramGrouper;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -9,23 +8,23 @@ import java.util.Collections;
 import java.util.LinkedHashSet;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 class AnagramGrouperTest {
     private final AnagramGrouper anagramGrouper = new AnagramGrouper();
 
     @Test
     void nullCollection() {
-        assertThrows(IllegalArgumentException.class,
-                () -> anagramGrouper.findAnagrams(null),
-                "Null or empty input strings");
+        assertThatThrownBy(() -> anagramGrouper.findAnagrams(null))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Null or empty input strings !");
     }
 
     @Test
     void emptyCollection() {
-        assertThrows(IllegalArgumentException.class,
-                () -> anagramGrouper.findAnagrams(Collections.emptyList()),
-                "Null or empty input strings");
+        assertThatThrownBy(() -> anagramGrouper.findAnagrams(Collections.emptyList()))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Null or empty input strings !");
     }
 
     @Test

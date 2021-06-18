@@ -5,7 +5,7 @@ import java.util.*;
 class AnagramGrouper {
     Collection<Collection<String>> findAnagrams(final Collection<String> strings) {
         if (strings == null || strings.size() == 0) {
-            throw new IllegalArgumentException("Null or empty input strings");
+            throw new IllegalArgumentException("Null or empty input strings !");
         }
 
         final Collection<String> uniqueStrings = getUniqueStrings(strings);
