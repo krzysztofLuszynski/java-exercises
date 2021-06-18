@@ -4,22 +4,21 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-class MinValueInArrayBasicImplTest extends MinValueInArrayBaseTest {
-    public MinValueInArrayBasicImplTest() {
-        super(new MinValueInArrayBasicImpl());
+abstract class MinValueInArrayStreamBaseTest extends MinValueInArrayBaseTest {
+    public MinValueInArrayStreamBaseTest(final MinValueInArray minValueInArray) {
+        super(minValueInArray);
     }
 
     @Test
     void nullArray() {
         assertThatThrownBy(() -> minValueInArray.minValue(null))
-                .isInstanceOf(CanNotFindMinValueException.class)
-                .hasMessage("Null or empty input array !");
+                .isInstanceOf(NullPointerException.class);
     }
 
     @Test
     void emptyArray() {
         assertThatThrownBy(() -> minValueInArray.minValue(new int[0]))
                 .isInstanceOf(CanNotFindMinValueException.class)
-                .hasMessage("Null or empty input array !");
+                .hasMessage("Can not find min in IntStream !");
     }
 }

@@ -18,7 +18,7 @@ class MinValueInArrayStreamReduceImpl implements MinValueInArray {
         if (minValue.isPresent()) {
             return minValue.getAsInt();
         } else {
-            throw new CanNotFindMinValueException("Can not find min in IntStream");
+            throw new CanNotFindMinValueException("Can not find min in IntStream !");
         }
     }
 }

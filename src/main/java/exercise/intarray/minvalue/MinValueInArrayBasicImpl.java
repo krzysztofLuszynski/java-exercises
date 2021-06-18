@@ -6,7 +6,7 @@ class MinValueInArrayBasicImpl implements MinValueInArray {
     @Override
     public int minValue(final int[] array) {
         if (ArrayUtils.isEmpty(array)) {
-            throw new CanNotFindMinValueException("Null or empty input array");
+            throw new CanNotFindMinValueException("Null or empty input array !");
         } else if (array.length == 1) {
             return array[0];
         } else {
