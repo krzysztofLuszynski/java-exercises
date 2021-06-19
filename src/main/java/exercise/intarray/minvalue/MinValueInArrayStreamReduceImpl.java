@@ -7,13 +7,7 @@ class MinValueInArrayStreamReduceImpl implements MinValueInArray {
     @Override
     public int minValue(final int[] array) {
         final OptionalInt minValue = Arrays.stream(array).
-                reduce((first, second) -> {
-                    if (first < second) {
-                        return first;
-                    } else {
-                        return second;
-                    }
-                });
+                reduce(Math::min);
 
         if (minValue.isPresent()) {
             return minValue.getAsInt();
